@@ -3,12 +3,56 @@
 <head>
 	<meta charset="UTF-8">
 	<title>TITLE</title>
+	<meta name="description" content="A BEAUTIFUL DESCRIPTION ABOUT WEB SITE (155 characters)">
+
+	<!-- author google+ -->
+	<link rel="author" href="https://plus.google.com/[YOUR PERSONAL G+ PROFILE HERE]">
+
+	<!-- schema google (replace on html tags) -->
+	<!-- Itemscope="[ageType]" -->
+			<!-- where [pageType]is Article, Blog, Book, Event, LocalBusiness, Organization, Person, Product or Review. -->
+	<!-- itemprop="name" -->
+			<!-- This acts as the title attribute of the rich snippet and should be limited to 140 characters. -->
+	<!-- itemprop="description" -->
+			<!-- This is the description of the rich snippet and should be limited to 185 characters -->
+	<!-- itemprop="image" -->
+			<!--  This is the image of the rich snippet with an optimal size is 180 x 120. Google+ will shrink this image, but if it is too small it will not be displayed. -->
+
+	<!-- facebook open graph meta -->
+	<meta property="og:title" content="TITLE OF FACEBOOK POST">
+	<meta property="og:type" content="article">
+	<meta property="og:image" content="http://www.EXAMPLE.com/IMAGE-THUMBNAIL.jpg">
+	<meta property="og:url" content="http://www.EXAMPLE.com">
+	<meta property="og:description" content="A BEAUTIFUL DESCRIPTION ABOUT WEB SITE (155 characters)">
+	
+	<!-- twitter cards -->
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:url" content="http://www.EXAMPLE.com">
+	<meta name="twitter:title" content="TITLE OF THE CARD">
+
+	<!-- responsive device -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<meta name="format-detection" content="telephone=no">
-	<link rel="stylesheet" type="text/css" href="css/reset.css">
-	<link rel="stylesheet" type="text/css" href="css/front.css">
+	
+	<!-- meta chrome for android color and favicon low/hight res-->
+	<meta name="theme-color" content="#db5945">
+	<link rel="icon" sizes="192x192" href="favicon.png">
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	
+	<!-- Apple Touch Icons -->
+	<link href="apple-touch-icon-57x57.png" rel="apple-touch-icon" sizes="57x57" type="image/png">
+	<link href="apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes="72x72" type="image/png">
+	<link href="apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes="114x114" type="image/png">
+	<link href="apple-touch-icon-144x144.png" rel="apple-touch-icon" sizes="144x144" type="image/png">
+	
+	<!-- no telephone detection on ios6/7/8 -->
+	<meta name="format-detection" content="telephone=no">
+
+	<!-- styles -->
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 	<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
+	
+	<!-- import some scripts -->
 	<script type="text/javascript" src="js/modernizr.js"></script>
 	
 </head>
@@ -17,6 +61,7 @@
 		<header>
 			<nav>
 				<p>I AM THE NAVIGATION BAR!</p>
+				<i class="fa fa-pencil">hola</i>
 			</nav>
 		</header>
 
@@ -30,6 +75,5 @@
 		<p>STICKY FOOTER</p>
 	</footer>
 
-	<script type="text/javascript" src="js/jquery.placeholder.min.js"></script>
 </body>
 </html>
