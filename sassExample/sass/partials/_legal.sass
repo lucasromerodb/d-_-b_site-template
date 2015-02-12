@@ -1,0 +1,22 @@
+.legal
+	width: 100%
+	float: left
+	@extend %boxShadow
+	padding: 50px 0
+
+	p
+		display: block
+		@extend %borderBox
+		padding: 15px
+		border: 4px solid $info
+
+		color: $info
+		font-size: $legal
+		font-weight: $bold
+		line-height: $base-font-lineheight
+
+		&:last-child
+			margin-top: 20px
+
+		span
+			margin-left: 10%

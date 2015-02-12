@@ -1,0 +1,72 @@
+@mixin borderRadius($radius)
+	border-radius: $radius
+	-webkit-border-radius: $radius
+	-moz-border-radius: $radius
+	-ms-border-radius: $radius
+	-o-border-radius: $radius
+
+// Yapa welcome and text
+.yapa-welcome
+	background-color: $black
+	padding: 20px 0
+	color: $white
+	text-align: center
+
+	h1
+		font-size: $titles
+		font-weight: $bold
+		margin-bottom: 20px
+
+	p
+		line-height: $base-font-lineheight
+
+// Yapa promo
+
+
+
+// Yapa list of check
+.yapa-list
+	position: relative
+	z-index: 100
+	float: left
+	width: 100%
+	padding: 10px 0
+	background-color: $white
+	@extend %boxShadow
+
+	span
+		float: left
+		display: block
+		width: 33.333333333%
+		padding: 10px 0
+		
+		font-size: $bodyt
+		font-weight: $bold
+
+	i
+		margin-right: 5px
+
+// Yapa secondary information 
+.yapa-info
+	float: left
+	width: 100%
+	background-color: darken($white, 5%)
+	padding: 40px 0
+
+	p
+		font-size: $smallt
+		color: lighten($black, 55%)
+		text-align: center
+		line-height: $base-font-lineheight
+	
+	.info-detail
+		@extend %borderBox
+		@include borderRadius(2px)
+		margin-top: 30px
+		padding: 30px
+		background-color: darken($white, 10%)
+		border-bottom: 2px solid darken($white, 12%)
+
+		span
+			color: lighten($black, 20%)
+			font-size: $base-font-size

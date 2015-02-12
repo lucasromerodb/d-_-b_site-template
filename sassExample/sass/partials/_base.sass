@@ -1,0 +1,51 @@
+// import partials
+@import modules/colors
+@import reset
+@import clearfix
+@import stickyfooter
+@import typography
+@import header
+@import yapa
+@import legal
+
+// variables
+%borderBox
+	box-sizing: 		border-box
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: 	border-box
+	-o-box-sizing: 		border-box
+
+%boxShadow
+	box-shadow: 0 4px 5px transparentize($black, 0.8)
+
+@mixin transitions($duration, $ease)
+	transition: 		all $duration ease $ease
+	-webkit-transition: all $duration ease $ease
+	-moz-transition: 	all $duration ease $ease
+	-ms-transition: 	all $duration ease $ease
+	-o-transition: 		all $duration ease $ease
+
+// mixins
+@mixin borderRadius($radius)
+	border-radius: 			$radius
+	-webkit-border-radius: 	$radius
+	-moz-border-radius: 	$radius
+	-ms-border-radius: 		$radius
+	-o-border-radius: 		$radius
+
+// styles
+.wrapper
+	width: 100%
+	max-width: 1024px
+	margin-right: auto
+	margin-left: auto
+	padding: 0 20px
+	@extend %borderBox
+
+.wrapper.minwrapper
+	width: 100%
+	max-width: 600px
+
+body, html
+	font-family: $base-font-family
+	@extend %borderBox
